@@ -14,7 +14,7 @@ jobs: # a collection of steps
               - "47:03:4b:4c:70:49:57:48:ab:21:cc:5c:a6:b2:59:34"
       - deploy:
           name: deployment
-          command: ssh -o "StrictHostKeyChecking no" root@209.38.232.236 "cd ~ && rm -rf nodejs-hello-world && git clone https://github.com/MohamedSalahFCI/circleci_nodeapp.git nodejs-hello-world && cd nodejs-hello-world && sh post_deployment.sh "
+          command: ssh -o "StrictHostKeyChecking no" root@209.38.232.236 "cd ~ && rm -rf nodejs-hello-world && git clone https://github.com/MohamedSalahFCI/circleci-node2.git nodejs-hello-world && cd nodejs-hello-world && sh post_deployment.sh "
 
 
 workflows:
